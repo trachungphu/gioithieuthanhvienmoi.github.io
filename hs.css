@@ -1,0 +1,119 @@
+/* Tổng quan */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+}
+
+/* Banner */
+.banner {
+    background: url('7798_2992015_11367.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Hồ sơ học sinh */
+.student-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.student-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.student-card:hover {
+    transform: scale(1.05);
+}
+
+.student-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 3px solid #4CAF50;
+}
+
+.student-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.student-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.student-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.student-info strong {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

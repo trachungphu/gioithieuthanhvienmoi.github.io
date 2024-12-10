@@ -1,0 +1,133 @@
+/* Tổng quan */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+}
+
+/* Banner */
+.banner {
+    background: url('images/banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Giới thiệu */
+.introduction {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    max-width: 800px;
+}
+
+.introduction h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Danh sách học sinh */
+.student-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.student-card {
+    background: white;
+    border-radius: 15px;
+    width: 300px;
+    overflow: hidden;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.student-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #4CAF50;
+    transition: transform 0.3s;
+}
+
+.student-card:hover .student-image img {
+    transform: scale(1.1);
+}
+
+.student-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.student-info h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.details {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
